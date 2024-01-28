@@ -1,20 +1,5 @@
-# Project
+# Form Validation with JS
 
 # Purpose
 
-# Template Features
-
-- npm & configs
-- Webpack & configs
-- ESLint
-- Prettier
-
-# Customize Template
-
-## package.json
-
-- "name" property
-
-## wepack.config.js
-
-- favicon path
+Practice validating forms (i.e. setting custom error messages) with JavaScript using the Constraint Validation API along with the novalidate form attribute.
