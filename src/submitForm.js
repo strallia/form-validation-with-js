@@ -1,6 +1,7 @@
 import { togglePopup } from "./popup";
 import { validateCountry } from "./validateCountry";
 import { validateEmail } from "./validateEmail";
+import { validateZip } from "./validateZip";
 
 const form = document.querySelector("form");
 
@@ -11,6 +12,7 @@ const submitForm = (event) => {
   if (!form.checkValidity()) {
     validateEmail();
     validateCountry();
+    validateZip();
   } else {
     togglePopup();
   }

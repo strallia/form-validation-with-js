@@ -1,3 +1,5 @@
-export const clearText = (node) => {
+const clearText = (node) => {
   node.textContent = "";
 };
+
+export { clearText };

@@ -105,7 +105,8 @@ select option:first-of-type {
 }
 
 input:invalid,
-select:invalid {
+select:invalid,
+.invalid {
   border: 2px solid maroon;
   background-color: rgb(255, 210, 216);
 }

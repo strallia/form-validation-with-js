@@ -1,4 +1,5 @@
 import { showCountryError } from "./errors";
+import { validateZip } from "./validateZip";
 
 const country = document.querySelector("#country");
 
@@ -10,6 +11,9 @@ const validateCountry = () => {
   }
 };
 
-country.addEventListener("input", validateCountry);
+country.addEventListener("input", () => {
+  validateCountry();
+  validateZip();
+});
 
-export { validateCountry };
+export { country, validateCountry };
