@@ -1,5 +1,6 @@
 const clearText = (node) => {
-  node.textContent = "";
+  const selectNode = node;
+  selectNode.textContent = "";
 };
 
 export { clearText };
