@@ -5,5 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
   </head>
-  <body></body>
+  <body>
+    <div class="card-container">
+      <h1>Sign Up Form</h1>
+      <form novalidate>
+        <div>
+          <label for="email">Email</label>
+          <p></p>
+          <input id="email" name="email" type="email" />
+        </div>
+        <div>
+          <label for="country">Country</label>
+          <p></p>
+          <select id="country" name="country">
+            <option disabled selected value>--select an option--</option>
+            <option value="australia">Australia</option>
+            <option value="new zealand">New Zealand</option>
+            <option value="united states">United States</option>
+            <option value="volvo">Canada</option>
+          </select>
+        </div>
+        <div>
+          <label for="zip">ZIP</label>
+          <p></p>
+          <input id="zip" name="zip" type="tel" />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <p></p>
+          <input id="password" name="password" type="password" />
+        </div>
+        <div>
+          <label for="confirm-password">Confirm Password</label>
+          <p></p>
+          <input
+            id="confirm-password"
+            name="confirm-password"
+            type="password"
+          />
+        </div>
+        <button type="reset">Clear</button>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
 </html>
