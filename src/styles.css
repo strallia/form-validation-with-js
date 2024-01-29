@@ -104,9 +104,14 @@ select option:first-of-type {
   display: none;
 }
 
-input:invalid {
+input:invalid,
+select:invalid {
   border: 2px solid maroon;
   background-color: rgb(255, 210, 216);
+}
+
+option {
+  background-color: white;
 }
 
 dialog {
