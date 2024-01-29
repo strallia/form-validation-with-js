@@ -23,3 +23,5 @@ const submitForm = (event) => {
 };
 
 submit.addEventListener("click", submitForm);
+
+export { form };

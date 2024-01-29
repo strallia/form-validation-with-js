@@ -1,3 +1,5 @@
+import { form } from "./submitForm";
+
 const popup = document.querySelector("dialog");
 
 const togglePopup = () => {
@@ -6,6 +8,13 @@ const togglePopup = () => {
 
 const againBtn = popup.querySelector("button");
 
-againBtn.addEventListener("click", togglePopup);
+const clearForm = () => {
+  form.reset();
+};
+
+againBtn.addEventListener("click", () => {
+  clearForm();
+  togglePopup();
+});
 
 export { togglePopup };
