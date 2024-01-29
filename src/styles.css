@@ -29,6 +29,7 @@ button,
   padding: 30px;
   background-color: whitesmoke;
   box-shadow: 0 0 20px grey;
+  width: clamp(400px, 50%, 80%);
 
   display: grid;
   grid-template-rows: auto 1fr;
