@@ -1,7 +1,5 @@
 import { showZipError } from "./errors";
-import { country } from "./validateCountry";
-
-const zip = document.querySelector("#zip");
+import { country, zip } from "./nodes";
 
 const constraints = {
   switzerland: {

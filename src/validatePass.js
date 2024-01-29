@@ -1,6 +1,5 @@
 import { showPasswordError } from "./errors";
-
-const password = document.querySelector("#password");
+import { password } from "./nodes";
 
 const regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,}$";
 

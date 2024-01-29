@@ -1,36 +1,31 @@
 import { clearText } from "./reset";
-
-const emailErrorPara = document.querySelector("div.email p");
+import {
+  emailErrorPara,
+  countryErrorPara,
+  zipErrorPara,
+  passwordErrorPara,
+  confirmPasswordErrorPara,
+} from "./nodes";
 
 const showEmailError = (string) => {
   clearText(emailErrorPara);
   emailErrorPara.textContent = string;
 };
 
-const countryErrorPara = document.querySelector("div.country p");
-
 const showCountryError = (string) => {
   clearText(countryErrorPara);
   countryErrorPara.textContent = string;
 };
-
-const zipErrorPara = document.querySelector("div.zip p");
 
 const showZipError = (string) => {
   clearText(zipErrorPara);
   zipErrorPara.textContent = string;
 };
 
-const passwordErrorPara = document.querySelector("div.password p");
-
 const showPasswordError = (string) => {
   clearText(passwordErrorPara);
   passwordErrorPara.textContent = string;
 };
-
-const confirmPasswordErrorPara = document.querySelector(
-  "div.confirm-password p",
-);
 
 const showConfirmPasswordError = (string) => {
   clearText(confirmPasswordErrorPara);

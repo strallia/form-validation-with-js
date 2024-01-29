@@ -1,6 +1,5 @@
 import { showEmailError } from "./errors";
-
-const email = document.querySelector("#email");
+import { email } from "./nodes";
 
 const validateEmail = () => {
   if (email.validity.valueMissing) {

@@ -1,7 +1,6 @@
 import { showCountryError } from "./errors";
 import { validateZip } from "./validateZip";
-
-const country = document.querySelector("#country");
+import { country } from "./nodes";
 
 const validateCountry = () => {
   if (country.validity.valueMissing) {

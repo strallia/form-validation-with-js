@@ -1,6 +1,4 @@
-import { form } from "./submitForm";
-
-const popup = document.querySelector("dialog");
+import { form, popup } from "./nodes";
 
 const togglePopup = () => {
   popup.classList.toggle("hidden");

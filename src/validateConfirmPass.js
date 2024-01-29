@@ -1,7 +1,5 @@
 import { showConfirmPasswordError } from "./errors";
-import { password } from "./validatePass";
-
-const confirmPassword = document.querySelector("#confirm-password");
+import { confirmPassword, password } from "./nodes";
 
 const passMismatch = () => {
   confirmPassword.pattern = password.value;
