@@ -1,4 +1,4 @@
-import { showPasswordError } from "./errors";
+import { showPasswordError } from "./showErrors";
 import { password } from "./nodes";
 
 const regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,}$";

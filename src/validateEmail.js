@@ -1,4 +1,4 @@
-import { showEmailError } from "./errors";
+import { showEmailError } from "./showErrors";
 import { email } from "./nodes";
 
 const validateEmail = () => {

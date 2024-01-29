@@ -1,4 +1,4 @@
-import { showConfirmPasswordError } from "./errors";
+import { showConfirmPasswordError } from "./showErrors";
 import { confirmPassword, password } from "./nodes";
 
 const passMismatch = () => {

@@ -1,4 +1,4 @@
-import { showCountryError } from "./errors";
+import { showCountryError } from "./showErrors";
 import { validateZip } from "./validateZip";
 import { country } from "./nodes";
 

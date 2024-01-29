@@ -1,4 +1,4 @@
-import { showZipError } from "./errors";
+import { showZipError } from "./showErrors";
 import { country, zip } from "./nodes";
 
 const constraints = {
