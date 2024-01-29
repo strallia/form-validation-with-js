@@ -21,4 +21,4 @@ const validatePassword = () => {
 
 password.addEventListener("input", validatePassword);
 
-export { validatePassword };
+export { password, validatePassword };

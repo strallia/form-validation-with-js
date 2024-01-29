@@ -1,5 +1,6 @@
 import "./styles.css";
 import "./submitForm";
+import { validateConfirmPassword } from "./validateConfirmPass";
 import { validateCountry } from "./validateCountry";
 import { validateEmail } from "./validateEmail";
 import { validatePassword } from "./validatePass";
@@ -10,3 +11,4 @@ validateEmail();
 validateCountry();
 validateZip();
 validatePassword();
+validateConfirmPassword();

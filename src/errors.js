@@ -29,7 +29,7 @@ const showPasswordError = (string) => {
 };
 
 const confirmPasswordErrorPara = document.querySelector(
-  "div.confirm-assword p",
+  "div.confirm-password p",
 );
 
 const showConfirmPasswordError = (string) => {
