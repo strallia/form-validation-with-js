@@ -11,18 +11,19 @@
       <form novalidate>
         <div class="email">
           <label for="email">Email</label>
-          <p></p>
+          <p class="error"></p>
           <input
             id="email"
             name="email"
             type="email"
-            placeholder="john@appleseed.com"
+            placeholder="john@appleseed"
+            required
           />
         </div>
         <div class="country">
           <label for="country">Country</label>
-          <p></p>
-          <select id="country" name="country">
+          <p class="error"></p>
+          <select id="country" name="country" required>
             <option disabled selected value>--select an option--</option>
             <option value="australia">Australia</option>
             <option value="new zealand">New Zealand</option>
@@ -32,21 +33,22 @@
         </div>
         <div class="zip">
           <label for="zip">ZIP</label>
-          <p></p>
-          <input id="zip" name="zip" type="tel" />
+          <p class="error"></p>
+          <input id="zip" name="zip" type="tel" required />
         </div>
         <div class="password">
           <label for="password">Password</label>
-          <p></p>
-          <input id="password" name="password" type="password" />
+          <p class="error"></p>
+          <input id="password" name="password" type="password" required />
         </div>
         <div class="confirm-password">
           <label for="confirm-password">Confirm Password</label>
-          <p></p>
+          <p class="error"></p>
           <input
             id="confirm-password"
             name="confirm-password"
             type="password"
+            required
           />
         </div>
         <button type="reset">Clear</button>

@@ -65,7 +65,14 @@ label::after {
 form > div {
   display: grid;
   grid-template-columns: max-content 1fr;
-  gap: 10px;
+  row-gap: 10px;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
 }
 
 button {
