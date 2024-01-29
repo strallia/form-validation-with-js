@@ -1,6 +1,6 @@
 import { showEmailError } from "./errors";
 
-const email = document.querySelector("[type=email]");
+const email = document.querySelector("#email");
 
 const validateEmail = () => {
   if (email.validity.valueMissing) {
