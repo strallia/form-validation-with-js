@@ -1,11 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-<script defer src="main.js"></script></head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <div class="card-container">
+      <h1>Sign Up Form</h1>
+      <form novalidate>
+        <div class="email">
+          <label for="email">Email</label>
+          <p class="error"></p>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="john@appleseed"
+            required
+          />
+        </div>
+        <div class="country">
+          <label for="country">Country</label>
+          <p class="error"></p>
+          <select id="country" name="country" required>
+            <option disabled selected value>--select an option--</option>
+            <option value="switzerland">Switzerland</option>
+            <option value="france">France</option>
+            <option value="germany">Germany</option>
+            <option value="netherland">Netherland</option>
+          </select>
+        </div>
+        <div class="zip">
+          <label for="zip">ZIP</label>
+          <p class="error"></p>
+          <input id="zip" name="zip" type="tel" required />
+        </div>
+        <div class="password">
+          <label for="password">Password</label>
+          <p class="error"></p>
+          <input id="password" name="password" type="password" required />
+        </div>
+        <div class="confirm-password">
+          <label for="confirm-password">Confirm Password</label>
+          <p class="error"></p>
+          <input
+            id="confirm-password"
+            name="confirm-password"
+            type="password"
+            required
+          />
+        </div>
+        <button type="reset">Clear</button>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <dialog class="hidden">
+      <div class="popup-card">
+        <h1>Congrats! You filled out the form correctly.</h1>
+        <button class="again">Again</button>
+      </div>
+    </dialog>
+  </body>
 </html>
